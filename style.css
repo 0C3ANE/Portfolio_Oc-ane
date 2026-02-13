@@ -1,60 +1,157 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #0f111a;
-    color: #ffffff;
+    background: #0a0f1f;
+    color: white;
+    scroll-behavior: smooth;
 }
 
-header {
+.hero {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(90deg, #1a1d2e, #2d1f3f);
+    padding: 120px 20px;
+    background: radial-gradient(circle at center, #111a3a, #0a0f1f);
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #d58cff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    color: #00f0ff;
+    text-shadow: 0 0 15px #00f0ff;
+}
+
+.subtitle {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #00f0ff, #8a2be2);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #8a2be2;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
 }
 
 h2 {
-    text-align: center;
-    margin-top: 60px;
-    color: #ff9de2;
+    color: #8a2be2;
+    margin-bottom: 40px;
 }
 
-.about {
-    padding: 40px;
-    text-align: center;
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.kpi-grid, .mitre-grid {
+.logo-container img {
+    width: 150px;
+    filter: brightness(0) invert(1);
+    transition: 0.3s;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #00f0ff;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00f0ff;
+}
+
+.kpi-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 40px;
 }
 
-.card, .mitre-card {
-    background: #1a1d2e;
-    padding: 20px;
+.kpi {
+    background: linear-gradient(45deg, #8a2be2, #00f0ff);
+    padding: 25px;
     border-radius: 15px;
-    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.linkedin {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #0077b5;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
     transition: 0.3s;
-    border: 1px solid #d58cff;
 }
 
-.card:hover, .mitre-card:hover {
-    transform: scale(1.05);
-    background: #2d1f3f;
-}
-
-.experience {
-    padding: 20px 40px;
+.linkedin:hover {
+    background: #005582;
 }
 
 footer {
-    text-align: center;
     padding: 20px;
+    background: #111a3a;
+}
+
+.mitre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
     margin-top: 40px;
-    background: #1a1d2e;
+}
+
+.mitre-box {
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0,240,255,0.1);
+    border: 1px solid #00f0ff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mitre-box:hover {
+    background: rgba(138,43,226,0.2);
+    box-shadow: 0 0 15px #8a2be2;
+}
+
+.mitre-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    min-height: 80px;
 }

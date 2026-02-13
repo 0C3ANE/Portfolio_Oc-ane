@@ -1,112 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
+<header class="hero">
     <h1>CYBERSECURITY & PROJECT MANAGEMENT</h1>
-    <p>Risk | SOC | Governance | OIV | Défense</p>
+    <p class="subtitle">
+        Future diplômée d'un MBA Management de la Cybersécurité et diplômée d’une école d’ingénieurs dans la majeure Objets connectés et Cybersécurité labellisée par l'ANSSI. 
+        Je suis à la recherche d’un CDI.
+    </p>
+    <a href="#contact" class="btn">Me contacter</a>
 </header>
 
-<section class="about">
-    <h2>Profil</h2>
-    <p>
-        Ingénieure cybersécurité diplômée de l'ESILV, spécialisée en gestion des risques,
-        sécurité applicative et opérations SOC.
-        Actuellement en MBA Management de la Cybersécurité.
-    </p>
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email : oceane.pratheu@email.com</p>
+    <p>Téléphone : 06 66 81 88 43</p>
+    <p>Adresse : Guyancourt (78), France</p>
+    <a href="https://www.linkedin.com/in/oc%C3%A9ane-p-478b981b7/" target="_blank" class="linkedin">
+        Voir mon LinkedIn
+    </a>
 </section>
 
-<section class="kpi">
-    <h2>Key Performance Indicators</h2>
+<section class="companies">
+    <h2>Expériences professionnelles</h2>
+    <div class="logo-container">
+        <img src="assets/dila.png" alt="DILA">
+        <img src="assets/airbus.png" alt="Airbus">
+        <img src="assets/thales.png" alt="Thales">
+    </div>
+</section>
+
+<section class="expertise">
+    <h2>Expertises</h2>
+    <div class="cards">
+        <div class="card">EBIOS RM & Gestion des Risques</div>
+        <div class="card">SOC & Threat Detection</div>
+        <div class="card">MITRE ATT&CK & Use Cases SIEM</div>
+        <div class="card">OIV / Réglementation ANSSI</div>
+        <div class="card">Sécurité Défense</div>
+        <div class="card">Project Management & Gouvernance</div>
+    </div>
+</section>
+
+<section class="dashboard">
+    <h2>Cyber Performance Dashboard</h2>
     <div class="kpi-grid">
-        <div class="card">
-            <h3>EBIOS RM</h3>
-            <p>+20 ateliers animés</p>
-        </div>
-        <div class="card">
-            <h3>Threat Modeling</h3>
-            <p>+30 analyses applicatives</p>
-        </div>
-        <div class="card">
-            <h3>SOC Detection</h3>
-            <p>+50 use cases SIEM</p>
-        </div>
-        <div class="card">
-            <h3>OIV / ANSSI</h3>
-            <p>Conformité PDIS</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Expérience Professionnelle</h2>
-
-    <div class="experience">
-        <h3>DILA – Assistance RSSI</h3>
-        <ul>
-            <li>Analyses de risques EBIOS RM</li>
-            <li>Maintien et suivi PSSI</li>
-            <li>Sensibilisation collaborateurs</li>
-            <li>Suivi vulnérabilités & KPI</li>
-        </ul>
-    </div>
-
-    <div class="experience">
-        <h3>Airbus – Sécurité & Défense</h3>
-        <ul>
-            <li>Analyses de risques & threat modeling</li>
-            <li>Définition politiques sécurité applicative</li>
-            <li>Homologation sécurité numérique</li>
-            <li>Gestion habilitations & protection SI défense</li>
-        </ul>
-    </div>
-
-    <div class="experience">
-        <h3>Airbus – Project Management & Gouvernance</h3>
-        <ul>
-            <li>Animation COPIL & comités RUN</li>
-            <li>Définition et suivi KPI</li>
-            <li>Coordination projets transverses</li>
-            <li>Gestion incidents & RCA</li>
-        </ul>
-    </div>
-
-    <div class="experience">
-        <h3>Thales – SOC Factory & Chef de Projet</h3>
-        <ul>
-            <li>Investigations & analyses forensiques</li>
-            <li>Développement use cases SIEM</li>
-            <li>Clients OIV & réglementation ANSSI</li>
-            <li>Migration outils internes & pilotage projets</li>
-        </ul>
+        <div class="kpi">+50 Use Cases SIEM</div>
+        <div class="kpi">+30 Analyses applicatives</div>
+        <div class="kpi">20+ Ateliers EBIOS RM</div>
+        <div class="kpi">100% conformité OIV</div>
     </div>
 </section>
 
 <section class="mitre">
-    <h2>MITRE ATT&CK Framework</h2>
+    <h2>MITRE ATT&CK Coverage</h2>
+
     <div class="mitre-grid">
-        <div class="mitre-card">Initial Access</div>
-        <div class="mitre-card">Execution</div>
-        <div class="mitre-card">Persistence</div>
-        <div class="mitre-card">Privilege Escalation</div>
-        <div class="mitre-card">Defense Evasion</div>
-        <div class="mitre-card">Credential Access</div>
-        <div class="mitre-card">Discovery</div>
-        <div class="mitre-card">Lateral Movement</div>
-        <div class="mitre-card">Exfiltration</div>
-        <div class="mitre-card">Command & Control</div>
+        <div class="mitre-box" onclick="showInfo('initial')">Initial Access</div>
+        <div class="mitre-box" onclick="showInfo('execution')">Execution</div>
+        <div class="mitre-box" onclick="showInfo('persistence')">Persistence</div>
+        <div class="mitre-box" onclick="showInfo('privilege')">Privilege Escalation</div>
+        <div class="mitre-box" onclick="showInfo('defense')">Defense Evasion</div>
+        <div class="mitre-box" onclick="showInfo('credential')">Credential Access</div>
+        <div class="mitre-box" onclick="showInfo('lateral')">Lateral Movement</div>
+        <div class="mitre-box" onclick="showInfo('exfiltration')">Exfiltration</div>
+        <div class="mitre-box" onclick="showInfo('c2')">Command & Control</div>
     </div>
+
+    <div id="mitre-info" class="mitre-info"></div>
 </section>
+
+<section class="thesis">
+    <h2>Thèse Professionnelle – MBA Management de la Cybersécurité</h2>
+
+    <p><strong>Sujet :</strong> Conception d'un modèle de maturité pour un SOC MSSP PDIS</p>
+
+    <p>
+        Cette thèse vise à concevoir un modèle de maturité adapté aux SOC opérant en contexte MSSP pour des clients OIV soumis aux exigences PDIS et à la réglementation ANSSI.
+    </p>
+
+    <ul>
+        <li>Définition des axes de maturité : gouvernance, détection, réponse, conformité</li>
+        <li>Alignement avec MITRE ATT&CK et exigences réglementaires</li>
+        <li>Intégration d'indicateurs de performance (MTTD, MTTR, couverture technique)</li>
+        <li>Approche d'amélioration continue adaptée aux environnements critiques</li>
+    </ul>
+
+    <p>
+        L’objectif est de fournir un cadre structurant permettant d’évaluer et d’améliorer la performance d’un SOC opérant pour des OIV.
+    </p>
+</section>
+
+
 
 <footer>
     <p>© 2026 – Cybersecurity Portfolio</p>
 </footer>
+
+<script>
+function showInfo(type) {
+    const info = document.getElementById("mitre-info");
+
+    const content = {
+        initial: "Détection des tentatives d'accès initial via phishing et exploitation de vulnérabilités. Mise en place de règles SIEM adaptées au contexte OIV.",
+        execution: "Surveillance des scripts malveillants et comportements anormaux. Développement de use cases corrélés.",
+        persistence: "Détection des mécanismes d’implantation durable (scheduled tasks, services malveillants).",
+        privilege: "Analyse et détection des élévations de privilèges suspectes dans les environnements critiques.",
+        defense: "Optimisation des règles pour détecter les tentatives d'évasion des mécanismes de sécurité.",
+        credential: "Mise en place de détection des techniques de dumping de credentials (LSASS, Pass-the-Hash).",
+        lateral: "Surveillance des mouvements latéraux dans des SI sensibles (OIV / Défense).",
+        exfiltration: "Détection des comportements d'exfiltration anormaux via corrélations multi-sources.",
+        c2: "Détection des communications Command & Control via analyse comportementale et threat intelligence."
+    };
+
+    info.innerHTML = content[type];
+}
+</script>
 
 </body>
 </html>
