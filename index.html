@@ -1,82 +1,716 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Océane Pratheu | Cybersecurity Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Océane PRATHEU - SOC Manager & Cybersecurity Expert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="encrypted-text" data-value="PRATHEU">PRATHEU</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Accueil</a>
+                <a href="#about" class="nav-link">Profil</a>
+                <a href="#experience" class="nav-link">Expériences</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#mitre" class="nav-link">MITRE ATT&CK</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Hacker Background -->
-  <canvas id="matrixCanvas"></canvas>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="glitch-container">
+                <h1 class="glitch-text" data-text="OCÉANE PRATHEU">OCÉANE PRATHEU</h1>
+            </div>
+            <div class="encrypted-subtitle">
+                <span class="encrypted-text" data-value="SOC MANAGER | THREAT DETECTION ANALYST">SOC MANAGER | THREAT DETECTION ANALYST</span>
+            </div>
+            <p class="hero-description">
+                Ingénieure Cybersécurité | MBA Management de la Cybersécurité<br>
+                Spécialisée en SOC, Threat Intelligence & MITRE ATT&CK Framework
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Années d'expérience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% PDIS</span>
+                </div>
+            </div>
+            <a href="#contact" class="cta-button">
+                <span class="button-text">Initier Contact</span>
+                <span class="button-shine"></span>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-  <header class="hero">
-    <img src="assets/profile.jpg" class="profile" />
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="encrypted-text" data-value="PROFIL_ANALYST">PROFIL_ANALYST</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="profile-card">
+                        <div class="profile-image-container">
+                            <img src="assets/profile.jpg" alt="Océane PRATHEU" class="profile-image">
+                            <div class="profile-border"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Océane PRATHEU</h3>
+                            <p class="profile-role">SOC Manager @ Thales Cyber Solutions</p>
+                            <div class="profile-location">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Guyancourt, Île-de-France
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="companies-section">
+                        <h4>Entreprises partenaires</h4>
+                        <div class="companies-grid">
+                            <div class="company-logo">
+                                <img src="assets/thales.jpg" alt="Thales">
+                            </div>
+                            <div class="company-logo">
+                                <img src="assets/airbus.jpg" alt="Airbus">
+                            </div>
+                            <div class="company-logo">
+                                <img src="assets/dila.jpg" alt="DILA">
+                            </div>
+                            <div class="company-logo">
+                                <img src="assets/globalong.jpg" alt="Globalong">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-right">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">analyst@oceane:~$</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="prompt">$</span> cat profile.txt</p>
+                            <p class="terminal-output">
+                                Future diplômée d'un MBA Management de la Cybersécurité et diplômée d'une école d'ingénieurs 
+                                dans la majeure Objets connectés et Cybersécurité labellisée par l'ANSSI.
+                            </p>
+                            <p><span class="prompt">$</span> cat expertise.json</p>
+                            <pre class="terminal-output code-block">{
+  "current_role": "SOC Manager @ Thales Cyber Solutions",
+  "focus": [
+    "Security Operations Center",
+    "Threat Detection & Intelligence",
+    "MITRE ATT&CK Framework",
+    "Incident Response & Forensics",
+    "PDIS Perimeter Security"
+  ],
+  "profile_type": "Hybrid 🔵 Blue Team + 🟣 GRC + 🟢 Network Security",
+  "status": "Recherche CDI"
+}</pre>
+                            <p><span class="prompt">$</span> whoami</p>
+                            <p class="terminal-output">
+                                Passionnée par la détection des menaces et l'analyse d'incidents, j'ai développé une expertise 
+                                en SOC avec une approche 360° couvrant la gouvernance, la conformité et l'architecture sécurisée. 
+                                Mon expérience chez Thales et Airbus m'a permis de maîtriser les frameworks MITRE ATT&CK, 
+                                la threat intelligence et le pilotage de projets cybersécurité complexes.
+                            </p>
+                            <p><span class="cursor-blink">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h1 class="encrypted">Océane PRATHEU</h1>
+    <!-- Experience Scroll Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="encrypted-text" data-value="THREAT_TIMELINE">THREAT_TIMELINE</span>
+            </h2>
+            <div class="sticky-scroll-container">
+                <div class="scroll-content">
+                    <!-- Experience 1 -->
+                    <div class="scroll-item">
+                        <div class="scroll-text">
+                            <h3>Thales Cyber Solutions</h3>
+                            <h4>Manager SOC - En alternance</h4>
+                            <p class="date">Novembre 2025 - Aujourd'hui | Elancourt</p>
+                            <ul>
+                                <li>Traitement et qualification des incidents de sécurité sur le périmètre PDIS</li>
+                                <li>Investigations approfondies : analyse d'alertes, corrélation d'événements, forensics</li>
+                                <li>Utilisation de Cyber Threat Intelligence (CTI) pour enrichir le traitement des tickets</li>
+                                <li>Organisation et supervision des activités quotidiennes du SOC</li>
+                                <li>Mapping des incidents selon MITRE ATT&CK</li>
+                                <li>Développement et optimisation de use cases SIEM</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tag">IBM QRadar</span>
+                                <span class="tag">ThreatQ</span>
+                                <span class="tag">MITRE ATT&CK</span>
+                                <span class="tag">Cybels Analytics</span>
+                                <span class="tag">Cortex XSOAR</span>
+                            </div>
+                        </div>
+                        <div class="scroll-visual">
+                            <div class="visual-card">
+                                <div class="threat-matrix-mini">
+                                    <div class="matrix-cell active"></div>
+                                    <div class="matrix-cell active"></div>
+                                    <div class="matrix-cell"></div>
+                                    <div class="matrix-cell active"></div>
+                                    <div class="matrix-cell"></div>
+                                    <div class="matrix-cell active"></div>
+                                    <div class="matrix-cell active"></div>
+                                    <div class="matrix-cell"></div>
+                                    <div class="matrix-cell active"></div>
+                                </div>
+                                <p class="visual-title">SOC Operations Dashboard</p>
+                            </div>
+                        </div>
+                    </div>
 
-    <h2>Cybersecurity Analyst • SOC • MITRE ATT&CK • CTI</h2>
+                    <!-- Experience 2 -->
+                    <div class="scroll-item">
+                        <div class="scroll-text">
+                            <h3>Airbus Cybersecurity</h3>
+                            <h4>Project Manager Officer & Ingénieure SI - En alternance</h4>
+                            <p class="date">Août 2023 - Juin 2025 | Elancourt</p>
+                            <ul>
+                                <li>Pilotage et taylorisation de 12 Maturity Gates</li>
+                                <li>Développement de politiques et procédures de sécurité</li>
+                                <li>Gestion des habilitations sur SI classifiés / défense</li>
+                                <li>Analyses de risques selon EBIOS Risk Manager</li>
+                                <li>Homologation de sécurité numérique et construction de matrices de risques</li>
+                                <li>Coordination de l'intégration d'un nouveau laboratoire</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tag">EBIOS RM</span>
+                                <span class="tag">ISO 27001</span>
+                                <span class="tag">Égérie</span>
+                                <span class="tag">ServiceNow</span>
+                                <span class="tag">Excel VBA</span>
+                            </div>
+                        </div>
+                        <div class="scroll-visual">
+                            <div class="visual-card">
+                                <div class="risk-gauge">
+                                    <svg viewBox="0 0 100 100" class="gauge-svg">
+                                        <circle cx="50" cy="50" r="45" class="gauge-bg"></circle>
+                                        <circle cx="50" cy="50" r="45" class="gauge-fill" style="--progress: 75"></circle>
+                                    </svg>
+                                    <div class="gauge-center">75%</div>
+                                </div>
+                                <p class="visual-title">Maturity Assessment</p>
+                            </div>
+                        </div>
+                    </div>
 
-    <button class="shiny-button" onclick="scrollToSection('about')">
-      Explore My Work
-    </button>
-  </header>
+                    <!-- Experience 3 -->
+                    <div class="scroll-item">
+                        <div class="scroll-text">
+                            <h3>DILA</h3>
+                            <h4>Ingénieure Sécurité - En alternance</h4>
+                            <p class="date">Septembre 2022 - Août 2023 | Paris</p>
+                            <ul>
+                                <li>Participation aux ateliers d'analyses de risques EBIOS RM</li>
+                                <li>Rédaction et évolution de la PSSI</li>
+                                <li>Suivi des vulnérabilités et coordination des remédiations</li>
+                                <li>Production de KPI sécurité et reportings</li>
+                                <li>Actions de sensibilisation à la cybersécurité</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tag">PSSI</span>
+                                <span class="tag">Vuln Management</span>
+                                <span class="tag">KPI</span>
+                                <span class="tag">Sensibilisation</span>
+                            </div>
+                        </div>
+                        <div class="scroll-visual">
+                            <div class="visual-card">
+                                <div class="policy-doc">
+                                    <div class="doc-line"></div>
+                                    <div class="doc-line short"></div>
+                                    <div class="doc-line"></div>
+                                    <div class="doc-line medium"></div>
+                                    <div class="doc-line"></div>
+                                </div>
+                                <p class="visual-title">PSSI Documentation</p>
+                            </div>
+                        </div>
+                    </div>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>Profil</h2>
-    <p>
-      Manager SOC chez Thales Cyber Solutions. 
-      Spécialisée en détection, threat intelligence, mapping MITRE ATT&CK,
-      EBIOS RM et gouvernance sécurité.
-    </p>
-  </section>
+                    <!-- Experience 4 -->
+                    <div class="scroll-item">
+                        <div class="scroll-text">
+                            <h3>Globalong</h3>
+                            <h4>Professeure d'anglais - Volontariat Humanitaire</h4>
+                            <p class="date">Juin 2025 - Septembre 2025 | Thaïlande</p>
+                            <ul>
+                                <li>Enseignement de l'anglais auprès d'élèves de la maternelle au collège</li>
+                                <li>Conception de supports pédagogiques adaptés</li>
+                                <li>Animation d'événements scolaires et culturels</li>
+                                <li>Développement de compétences en communication interculturelle</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tag">Pédagogie</span>
+                                <span class="tag">Communication</span>
+                                <span class="tag">Adaptabilité</span>
+                                <span class="tag">Leadership</span>
+                            </div>
+                        </div>
+                        <div class="scroll-visual">
+                            <div class="visual-card">
+                                <div class="global-icon">
+                                    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                        <path d="M50 10 Q60 50 50 90 M50 10 Q40 50 50 90"></path>
+                                        <line x1="10" y1="35" x2="90" y2="35"></line>
+                                        <line x1="10" y1="65" x2="90" y2="65"></line>
+                                    </svg>
+                                </div>
+                                <p class="visual-title">International Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Sticky Scroll Style Section -->
-  <section class="sticky-container">
-    <div class="sticky-left">
-      <h2 id="sticky-title">SOC Operations</h2>
-      <p id="sticky-description">
-        Traitement d’incidents, corrélation d’événements,
-        investigations forensiques et enrichissement CTI.
-      </p>
-    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="encrypted-text" data-value="CAPABILITY_MATRIX">CAPABILITY_MATRIX</span>
+            </h2>
+            <div class="skills-grid">
+                <!-- SOC & Detection -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>SOC & Threat Intelligence</h3>
+                    <ul>
+                        <li>Analyse et traitement d'incidents (SOC)</li>
+                        <li>Investigations forensiques</li>
+                        <li>Cyber Threat Intelligence (CTI)</li>
+                        <li>MITRE ATT&CK mapping</li>
+                        <li>Use cases SIEM</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>IBM QRadar</span>
+                        <span>ThreatQ</span>
+                        <span>Cortex XSOAR</span>
+                        <span>Cybels</span>
+                    </div>
+                </div>
 
-    <div class="sticky-right">
-      <div class="sticky-card">Threat Detection</div>
-      <div class="sticky-card">MITRE Mapping</div>
-      <div class="sticky-card">GRC & EBIOS RM</div>
-      <div class="sticky-card">SIEM Optimization</div>
-    </div>
-  </section>
+                <!-- Network Security -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3>Sécurité Réseau</h3>
+                    <ul>
+                        <li>Firewall Stormshield NSS</li>
+                        <li>VPN, IPSec, NAT</li>
+                        <li>IDS / IPS</li>
+                        <li>Analyse réseau Wireshark</li>
+                        <li>Segmentation & filtrage</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Stormshield</span>
+                        <span>Cisco</span>
+                        <span>Wireshark</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
 
-  <!-- MITRE Section -->
-  <section class="section">
-    <h2>MITRE ATT&CK Focus</h2>
-    <div class="mitre-grid">
-      <div>Initial Access</div>
-      <div>Execution</div>
-      <div>Persistence</div>
-      <div>Privilege Escalation</div>
-      <div>Defense Evasion</div>
-      <div>Credential Access</div>
-      <div>Discovery</div>
-      <div>Lateral Movement</div>
-      <div>Collection</div>
-      <div>Exfiltration</div>
-    </div>
-  </section>
+                <!-- GRC -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>GRC & Conformité</h3>
+                    <ul>
+                        <li>EBIOS Risk Manager</li>
+                        <li>ISO 27001 / 27005</li>
+                        <li>RGPD / NIS2</li>
+                        <li>Homologation sécurité</li>
+                        <li>PSSI & documentation</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Égérie</span>
+                        <span>Cyberwatch</span>
+                        <span>ServiceNow</span>
+                        <span>Jira</span>
+                    </div>
+                </div>
 
-  <!-- Contact -->
-  <section class="section">
-    <h2>Contact</h2>
-    <p>oceane.pratheu@gmail.com</p>
-    <a href="https://www.linkedin.com/in/oc%C3%A9ane-pratheu-478b981b7/" target="_blank">
-      LinkedIn
-    </a>
-  </section>
+                <!-- Development -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Développement & Data</h3>
+                    <ul>
+                        <li>Python, C, C++</li>
+                        <li>SQL / NoSQL</li>
+                        <li>ElasticSearch, MongoDB</li>
+                        <li>Scripting sécurité</li>
+                        <li>SonarQube</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Elastic</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- MITRE ATT&CK Section -->
+    <section id="mitre" class="mitre-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="encrypted-text" data-value="MITRE_COVERAGE">MITRE_COVERAGE</span>
+            </h2>
+            <p class="section-subtitle">Mapping des capacités de détection selon le framework MITRE ATT&CK</p>
+            
+            <div class="mitre-container">
+                <div class="mitre-controls">
+                    <button class="mitre-filter active" data-filter="all">Toutes les tactiques</button>
+                    <button class="mitre-filter" data-filter="initial">Initial Access</button>
+                    <button class="mitre-filter" data-filter="execution">Execution</button>
+                    <button class="mitre-filter" data-filter="persistence">Persistence</button>
+                    <button class="mitre-filter" data-filter="defense">Defense Evasion</button>
+                    <button class="mitre-filter" data-filter="discovery">Discovery</button>
+                    <button class="mitre-filter" data-filter="lateral">Lateral Movement</button>
+                    <button class="mitre-filter" data-filter="collection">Collection</button>
+                    <button class="mitre-filter" data-filter="exfiltration">Exfiltration</button>
+                </div>
+
+                <div class="mitre-matrix">
+                    <!-- Tactics Row -->
+                    <div class="mitre-tactics">
+                        <div class="tactic-cell" data-tactic="initial">Initial Access</div>
+                        <div class="tactic-cell" data-tactic="execution">Execution</div>
+                        <div class="tactic-cell" data-tactic="persistence">Persistence</div>
+                        <div class="tactic-cell" data-tactic="privilege">Privilege Escalation</div>
+                        <div class="tactic-cell" data-tactic="defense">Defense Evasion</div>
+                        <div class="tactic-cell" data-tactic="credential">Credential Access</div>
+                        <div class="tactic-cell" data-tactic="discovery">Discovery</div>
+                        <div class="tactic-cell" data-tactic="lateral">Lateral Movement</div>
+                        <div class="tactic-cell" data-tactic="collection">Collection</div>
+                        <div class="tactic-cell" data-tactic="exfiltration">Exfiltration</div>
+                        <div class="tactic-cell" data-tactic="impact">Impact</div>
+                    </div>
+
+                    <!-- Techniques Grid -->
+                    <div class="techniques-grid">
+                        <!-- Column 1: Initial Access -->
+                        <div class="technique-column" data-category="initial">
+                            <div class="technique-item coverage-high" data-tooltip="Phishing: Email">T1566.001</div>
+                            <div class="technique-item coverage-high" data-tooltip="Exploit Public-Facing Application">T1190</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Valid Accounts">T1078</div>
+                            <div class="technique-item coverage-high" data-tooltip="Drive-by Compromise">T1189</div>
+                        </div>
+
+                        <!-- Column 2: Execution -->
+                        <div class="technique-column" data-category="execution">
+                            <div class="technique-item coverage-high" data-tooltip="Command and Scripting Interpreter">T1059</div>
+                            <div class="technique-item coverage-high" data-tooltip="PowerShell">T1059.001</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Windows Management Instrumentation">T1047</div>
+                            <div class="technique-item coverage-high" data-tooltip="User Execution">T1204</div>
+                        </div>
+
+                        <!-- Column 3: Persistence -->
+                        <div class="technique-column" data-category="persistence">
+                            <div class="technique-item coverage-high" data-tooltip="Create Account">T1136</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Boot or Logon Autostart">T1547</div>
+                            <div class="technique-item coverage-high" data-tooltip="Scheduled Task/Job">T1053</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Account Manipulation">T1098</div>
+                        </div>
+
+                        <!-- Column 4: Privilege Escalation -->
+                        <div class="technique-column" data-category="privilege">
+                            <div class="technique-item coverage-high" data-tooltip="Exploitation for Privilege Escalation">T1068</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Process Injection">T1055</div>
+                            <div class="technique-item coverage-high" data-tooltip="Valid Accounts">T1078</div>
+                            <div class="technique-item coverage-low" data-tooltip="Hijack Execution Flow">T1574</div>
+                        </div>
+
+                        <!-- Column 5: Defense Evasion -->
+                        <div class="technique-column" data-category="defense">
+                            <div class="technique-item coverage-high" data-tooltip="Obfuscated Files">T1027</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Indicator Removal">T1070</div>
+                            <div class="technique-item coverage-high" data-tooltip="Disable Security Tools">T1562</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Masquerading">T1036</div>
+                        </div>
+
+                        <!-- Column 6: Credential Access -->
+                        <div class="technique-column" data-category="credential">
+                            <div class="technique-item coverage-high" data-tooltip="Brute Force">T1110</div>
+                            <div class="technique-item coverage-high" data-tooltip="OS Credential Dumping">T1003</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Input Capture">T1056</div>
+                            <div class="technique-item coverage-high" data-tooltip="Steal Credentials">T1552</div>
+                        </div>
+
+                        <!-- Column 7: Discovery -->
+                        <div class="technique-column" data-category="discovery">
+                            <div class="technique-item coverage-high" data-tooltip="Network Service Scanning">T1046</div>
+                            <div class="technique-item coverage-high" data-tooltip="System Information Discovery">T1082</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Account Discovery">T1087</div>
+                            <div class="technique-item coverage-high" data-tooltip="File and Directory Discovery">T1083</div>
+                        </div>
+
+                        <!-- Column 8: Lateral Movement -->
+                        <div class="technique-column" data-category="lateral">
+                            <div class="technique-item coverage-high" data-tooltip="Remote Services">T1021</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Use Alternate Authentication">T1550</div>
+                            <div class="technique-item coverage-high" data-tooltip="Exploitation of Remote Services">T1210</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Lateral Tool Transfer">T1570</div>
+                        </div>
+
+                        <!-- Column 9: Collection -->
+                        <div class="technique-column" data-category="collection">
+                            <div class="technique-item coverage-high" data-tooltip="Data from Local System">T1005</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Data from Network Shared Drive">T1039</div>
+                            <div class="technique-item coverage-high" data-tooltip="Screen Capture">T1113</div>
+                            <div class="technique-item coverage-low" data-tooltip="Email Collection">T1114</div>
+                        </div>
+
+                        <!-- Column 10: Exfiltration -->
+                        <div class="technique-column" data-category="exfiltration">
+                            <div class="technique-item coverage-high" data-tooltip="Exfiltration Over C2 Channel">T1041</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Exfiltration Over Web Service">T1567</div>
+                            <div class="technique-item coverage-high" data-tooltip="Data Transfer Size Limits">T1030</div>
+                            <div class="technique-item coverage-low" data-tooltip="Automated Exfiltration">T1020</div>
+                        </div>
+
+                        <!-- Column 11: Impact -->
+                        <div class="technique-column" data-category="impact">
+                            <div class="technique-item coverage-high" data-tooltip="Data Encrypted for Impact">T1486</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Service Stop">T1489</div>
+                            <div class="technique-item coverage-high" data-tooltip="Defacement">T1491</div>
+                            <div class="technique-item coverage-medium" data-tooltip="Resource Hijacking">T1496</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mitre-legend">
+                    <div class="legend-item">
+                        <span class="legend-color coverage-high"></span>
+                        <span>Couverture élevée - Détection active et monitoring continu</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color coverage-medium"></span>
+                        <span>Couverture moyenne - Détection partielle ou manuelle</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color coverage-low"></span>
+                        <span>Couverture faible - Capacité limitée de détection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="encrypted-text" data-value="CREDENTIALS">CREDENTIALS</span>
+            </h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M9 12l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h4>TryHackMe SOC Level 1</h4>
+                    <p>Février 2025</p>
+                    <span class="cert-id">THM-M71PAS85GY</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="9" x2="15" y2="15"></line>
+                            <line x1="15" y1="9" x2="9" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h4>ISO 27001 & 27005</h4>
+                    <p>Décembre 2024 - Enablers.io</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h4>MOOC SecNumAcademie</h4>
+                    <p>Avril 2023 - ANSSI</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Cisco Intro to Cybersecurity</h4>
+                    <p>Avril 2025</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                    </div>
+                    <h4>MOOC Continuité d'Activité</h4>
+                    <p>Novembre 2024 - SGDSN</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                    </div>
+                    <h4>Agile Methodology</h4>
+                    <p>Octobre 2023 - Enablers.io</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="encrypted-text" data-value="ESTABLISH_CONNECTION">ESTABLISH_CONNECTION</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h4>Email</h4>
+                        <a href="mailto:Oceane.pratheu@gmail.com">Oceane.pratheu@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h4>Téléphone</h4>
+                        <a href="tel:+33666818843">06 66 81 88 43</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/oc%C3%A9ane-pratheu-478b981b7/" target="_blank">Océane Pratheu</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h4>Localisation</h4>
+                        <p>Guyancourt, Île-de-France</p>
+                    </div>
+                </div>
+                
+                <div class="availability-card">
+                    <div class="availability-pulse"></div>
+                    <h3>Disponible pour opportunités CDI</h3>
+                    <p>Ingénieure Cybersécurité | SOC Manager | Threat Detection Analyst</p>
+                    <a href="mailto:Oceane.pratheu@gmail.com" class="cta-button">
+                        <span class="button-text">Envoyer un message</span>
+                        <span class="button-shine"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Océane PRATHEU - SOC Manager & Cybersecurity Expert</p>
+                <p class="footer-tagline">
+                    <span class="encrypted-text" data-value="DEFENDING_THE_DIGITAL_FRONTIER">DEFENDING_THE_DIGITAL_FRONTIER</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
