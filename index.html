@@ -1,292 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cybersecurity Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Océane Pratheu | Cybersecurity Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="hero">
-    <h1>CYBERSECURITY & PROJECT MANAGEMENT</h1>
-    <p class="subtitle">
-        Future diplômée d'un MBA Management de la Cybersécurité et diplômée d’une école d’ingénieurs dans la majeure Objets connectés et Cybersécurité labellisée par l'ANSSI. 
-        Je suis à la recherche d’un CDI.
-    </p>
-    <a href="#contact" class="btn">Me contacter</a>
-</header>
+  <!-- Hacker Background -->
+  <canvas id="matrixCanvas"></canvas>
 
+  <header class="hero">
+    <img src="assets/profile.jpg" class="profile" />
 
+    <h1 class="encrypted">Océane PRATHEU</h1>
 
-<section class="timeline-section">
-  <h2>Expériences Professionnelles</h2>
+    <h2>Cybersecurity Analyst • SOC • MITRE ATT&CK • CTI</h2>
 
-  <div class="timeline">
+    <button class="shiny-button" onclick="scrollToSection('about')">
+      Explore My Work
+    </button>
+  </header>
 
-    <!-- DILA -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="company-header">
-          <img src="assets/DILA.jpg" class="company-logo">
-          <h3>DILA</h3>
-        </div>
-	<p class="position">Ingénieure Cybersécurité - En alternance</p>
-        <p class="date">Septembre 2022 – Août 2023</p>
-        <ul>
-          <li>Analyses de risques EBIOS RM</li>
-          <li>Animation d’ateliers de sécurité</li>
-          <li>Maintien et suivi PSSI</li>
-          <li>Suivi vulnérabilités & reporting KPI</li>
-        </ul>
-      </div>
-      <div class="timeline-dot"></div>
-    </div>
-
-    <!-- Airbus -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="company-header">
-          <img src="assets/airbus.png" class="company-logo">
-          <h3>Airbus</h3>
-        </div>
-	<p class="position">Ingénieure des Systèmes d'Information - En alternance</p>
-        <p class="date">Août 2023 – Juin 2024</p>
-        <ul>
-          <li>Analyses de risques & threat modeling</li>
-          <li>Définition politiques sécurité applicative</li>
-          <li>Homologation sécurité numérique</li>
-          <li>Gestion habilitations & protection SI défense</li>
-        </ul>
-      </div>
-      <div class="timeline-dot"></div>
-    </div>
-
-    <!-- Airbus -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="company-header">
-          <img src="assets/airbus.png" class="company-logo">
-          <h3>Airbus</h3>
-        </div>
-	<p class="position">Project Manager Officer - En alternance</p>
-        <p class="date">Juin 2024 – Juin 2025</p>
-        <ul>
-          <li>Animer des réunions de suivi (comités de pilotage, revues de sprints)</li>
-          <li>Analyse des écarts et propositions d’actions correctives</li>
-          <li>Produire des reportings clairs pour le CEO et les parties prenantes</li>
-          <li>Contribuer à l’amélioration continue des processus de gestion de projet</li>
-        </ul>
-      </div>
-      <div class="timeline-dot"></div>
-    </div>
-
-    <!-- Volontariat -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="company-header">
-          <img src="assets/volontariat.png" class="company-logo">
-          <h3>Volontariat Humanitaire – Thaïlande</h3>
-        </div>
-	<p class="position">Enseignante d’anglais</p>
-        <p class="date">Juin 2025 – Septembre 2025</p>
-        <ul>
-          <li>Préparer des supports pédagogiques adaptés</li>
-          <li>Organisation de projets éducatifs et culturels</li>
-        </ul>
-      </div>
-      <div class="timeline-dot"></div>
-    </div>
-
-    <!-- Thales -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="company-header">
-          <img src="assets/thales.png" class="company-logo">
-          <h3>Thales – SOC Factory</h3>
-        </div>
-	<p class="position">Analyste SOC & Chef de Projet - En alternance</p>
-        <p class="date">Depuis Novembre 2025</p>
-        <ul>
-          <li>Investigations SOC & forensique</li>
-          <li>Développement use cases SIEM</li>
-          <li>Clients OIV – conformité PDIS</li>
-          <li>Pilotage projets SOC France</li>
-        </ul>
-      </div>
-      <div class="timeline-dot"></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="expertise">
-    <h2>Expertises</h2>
-    <div class="cards">
-        <div class="card">EBIOS RM & Gestion des Risques</div>
-        <div class="card">SOC & Threat Detection</div>
-        <div class="card">MITRE ATT&CK & Use Cases SIEM</div>
-        <div class="card">OIV / Réglementation ANSSI</div>
-        <div class="card">Sécurité Défense</div>
-        <div class="card">Project Management & Gouvernance</div>
-    </div>
-</section>
-
-<section class="dashboard">
-    <h2>Cyber Performance Dashboard</h2>
-    <div class="kpi-grid">
-        <div class="kpi">+50 Use Cases SIEM</div>
-        <div class="kpi">+30 Analyses applicatives</div>
-        <div class="kpi">20+ Ateliers EBIOS RM</div>
-        <div class="kpi">100% conformité OIV</div>
-    </div>
-</section>
-
-<section>
-  <h2>MITRE ATT&CK – Coverage Mapping</h2>
-
-  <div class="mitre-grid">
-
-    <div class="mitre-cell green" onclick="showMitre('recon')">Reconnaissance</div>
-    <div class="mitre-cell yellow" onclick="showMitre('resource')">Resource Development</div>
-    <div class="mitre-cell green" onclick="showMitre('initial')">Initial Access</div>
-    <div class="mitre-cell green" onclick="showMitre('execution')">Execution</div>
-    <div class="mitre-cell green" onclick="showMitre('persistence')">Persistence</div>
-    <div class="mitre-cell green" onclick="showMitre('privilege')">Privilege Escalation</div>
-    <div class="mitre-cell green" onclick="showMitre('defense')">Defense Evasion</div>
-    <div class="mitre-cell green" onclick="showMitre('credential')">Credential Access</div>
-    <div class="mitre-cell yellow" onclick="showMitre('discovery')">Discovery</div>
-    <div class="mitre-cell green" onclick="showMitre('lateral')">Lateral Movement</div>
-    <div class="mitre-cell yellow" onclick="showMitre('collection')">Collection</div>
-    <div class="mitre-cell green" onclick="showMitre('c2')">Command & Control</div>
-    <div class="mitre-cell yellow" onclick="showMitre('exfiltration')">Exfiltration</div>
-    <div class="mitre-cell yellow" onclick="showMitre('impact')">Impact</div>
-
-  </div>
-
-  <div id="mitre-detail" class="mitre-detail"></div>
-</section>
-
-<script>
-function showMitre(type){
-  const detail = document.getElementById("mitre-detail");
-
-  const content = {
-    recon: "Analyse de surface d’attaque et veille sur vecteurs d’entrée potentiels.",
-    resource: "Surveillance de l’infrastructure malveillante via Threat Intelligence.",
-    initial: "Détection phishing & exploitation vulnérabilités dans contexte OIV.",
-    execution: "Développement use cases corrélés pour scripts et exécutions suspectes.",
-    persistence: "Surveillance mécanismes de maintien (services, tâches planifiées).",
-    privilege: "Détection élévations de privilèges anormales.",
-    defense: "Optimisation règles pour détecter contournement sécurité.",
-    credential: "Détection dumping LSASS & attaques Pass-the-Hash.",
-    discovery: "Surveillance scans internes et reconnaissance réseau.",
-    lateral: "Détection mouvements latéraux dans SI critiques.",
-    collection: "Surveillance extraction de données internes.",
-    c2: "Détection communications C2 via corrélation & TI.",
-    exfiltration: "Analyse flux sortants anormaux multi-sources.",
-    impact: "Surveillance comportements destructeurs ou ransomware."
-  };
-
-  detail.innerHTML = content[type];
-}
-</script>
-
-
-
-<section class="thesis">
-    <h2>Thèse Professionnelle – MBA Management de la Cybersécurité</h2>
-
-    <p><strong>Sujet :</strong> Conception d'un modèle de maturité pour un SOC MSSP PDIS</p>
-
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>Profil</h2>
     <p>
-        Cette thèse vise à concevoir un modèle de maturité adapté aux SOC opérant en contexte MSSP pour des clients OIV soumis aux exigences PDIS et à la réglementation ANSSI.
+      Manager SOC chez Thales Cyber Solutions. 
+      Spécialisée en détection, threat intelligence, mapping MITRE ATT&CK,
+      EBIOS RM et gouvernance sécurité.
     </p>
+  </section>
 
-    <ul>
-        <li>Définition des axes de maturité : gouvernance, détection, réponse, conformité</li>
-        <li>Alignement avec MITRE ATT&CK et exigences réglementaires</li>
-        <li>Intégration d'indicateurs de performance (MTTD, MTTR, couverture technique)</li>
-        <li>Approche d'amélioration continue adaptée aux environnements critiques</li>
-    </ul>
+  <!-- Sticky Scroll Style Section -->
+  <section class="sticky-container">
+    <div class="sticky-left">
+      <h2 id="sticky-title">SOC Operations</h2>
+      <p id="sticky-description">
+        Traitement d’incidents, corrélation d’événements,
+        investigations forensiques et enrichissement CTI.
+      </p>
+    </div>
 
-    <p>
-        L’objectif est de fournir un cadre structurant permettant d’évaluer et d’améliorer la performance d’un SOC opérant pour des OIV.
-    </p>
-</section>
+    <div class="sticky-right">
+      <div class="sticky-card">Threat Detection</div>
+      <div class="sticky-card">MITRE Mapping</div>
+      <div class="sticky-card">GRC & EBIOS RM</div>
+      <div class="sticky-card">SIEM Optimization</div>
+    </div>
+  </section>
 
-<section>
-  <h2>Modèle de maturité SOC MSSP PDIS</h2>
-  <canvas id="radarChart"></canvas>
-</section>
+  <!-- MITRE Section -->
+  <section class="section">
+    <h2>MITRE ATT&CK Focus</h2>
+    <div class="mitre-grid">
+      <div>Initial Access</div>
+      <div>Execution</div>
+      <div>Persistence</div>
+      <div>Privilege Escalation</div>
+      <div>Defense Evasion</div>
+      <div>Credential Access</div>
+      <div>Discovery</div>
+      <div>Lateral Movement</div>
+      <div>Collection</div>
+      <div>Exfiltration</div>
+    </div>
+  </section>
 
-<script>
-const ctx = document.getElementById('radarChart');
-
-new Chart(ctx, {
-  type: 'radar',
-  data: {
-    labels: ['Gouvernance', 'Détection', 'Réponse', 'Conformité OIV', 'Pilotage KPI'],
-    datasets: [{
-      label: 'SOC MSSP Type',
-      data: [4, 3, 3, 4, 4],
-      fill: true,
-      borderColor: '#8a2be2',
-      backgroundColor: 'rgba(138,43,226,0.2)'
-    }]
-  },
-  options: {
-    scales: {
-      r: {
-        min: 0,
-        max: 5
-      }
-    }
-  }
-});
-</script>
-
-<select onchange="changeLevel(this.value)">
-  <option value="1">Niveau 1 - Initial</option>
-  <option value="3">Niveau 3 - Industrialisé</option>
-  <option value="5">Niveau 5 - Optimisé</option>
-</select>
-
-<footer>
-    <p>© 2026 – Cybersecurity Portfolio</p>
-</footer>
-
-<script>
-function showInfo(type) {
-    const info = document.getElementById("mitre-info");
-
-    const content = {
-        initial: "Détection des tentatives d'accès initial via phishing et exploitation de vulnérabilités. Mise en place de règles SIEM adaptées au contexte OIV.",
-        execution: "Surveillance des scripts malveillants et comportements anormaux. Développement de use cases corrélés.",
-        persistence: "Détection des mécanismes d’implantation durable (scheduled tasks, services malveillants).",
-        privilege: "Analyse et détection des élévations de privilèges suspectes dans les environnements critiques.",
-        defense: "Optimisation des règles pour détecter les tentatives d'évasion des mécanismes de sécurité.",
-        credential: "Mise en place de détection des techniques de dumping de credentials (LSASS, Pass-the-Hash).",
-        lateral: "Surveillance des mouvements latéraux dans des SI sensibles (OIV / Défense).",
-        exfiltration: "Détection des comportements d'exfiltration anormaux via corrélations multi-sources.",
-        c2: "Détection des communications Command & Control via analyse comportementale et threat intelligence."
-    };
-
-    info.innerHTML = content[type];
-}
-</script>
-
-<section id="contact" class="contact">
+  <!-- Contact -->
+  <section class="section">
     <h2>Contact</h2>
-    <p>Email : oceane.pratheu@email.com</p>
-    <p>Téléphone : 06 66 81 88 43</p>
-    <p>Adresse : Guyancourt (78), France</p>
-    <a href="https://www.linkedin.com/in/oc%C3%A9ane-p-478b981b7/" target="_blank" class="linkedin">
-        Voir mon LinkedIn
+    <p>oceane.pratheu@gmail.com</p>
+    <a href="https://www.linkedin.com/in/oc%C3%A9ane-pratheu-478b981b7/" target="_blank">
+      LinkedIn
     </a>
-</section>
+  </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
