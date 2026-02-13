@@ -868,6 +868,300 @@ body {
 }
 
 /* ==================== */
+/* SOFT SKILLS SECTION  */
+/* ==================== */
+.soft-skills-section {
+    padding: 6rem 0;
+}
+
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.soft-skill-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.soft-skill-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 255, 159, 0.2);
+}
+
+.soft-skill-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.soft-skill-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.soft-skill-card h3 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.soft-skill-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.soft-skill-description strong {
+    color: var(--text-primary);
+}
+
+.skill-context {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.context-tag {
+    padding: 0.3rem 0.7rem;
+    background: var(--bg-darker);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: var(--secondary);
+}
+
+/* Highlighted Soft Skill Card */
+.soft-skill-highlight {
+    background: linear-gradient(135deg, rgba(0, 255, 159, 0.05), rgba(0, 212, 255, 0.05));
+    border: 2px solid var(--primary);
+}
+
+.soft-skill-highlight:hover {
+    box-shadow: 0 10px 40px rgba(0, 255, 159, 0.3);
+}
+
+.highlight-context .context-tag.special {
+    background: var(--primary);
+    color: var(--bg-dark);
+    border-color: var(--primary);
+    font-weight: 600;
+}
+
+/* ==================== */
+/* THESIS SECTION       */
+/* ==================== */
+.thesis-section {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+}
+
+.thesis-card {
+    background: var(--bg-card);
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 255, 159, 0.1);
+}
+
+.thesis-header {
+    background: linear-gradient(135deg, rgba(0, 255, 159, 0.1), rgba(0, 212, 255, 0.1));
+    border-bottom: 1px solid var(--border-color);
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.thesis-badge {
+    width: 80px;
+    height: 80px;
+    background: var(--bg-darker);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.thesis-badge svg {
+    width: 40px;
+    height: 40px;
+    color: var(--primary);
+}
+
+.thesis-title-section h3 {
+    color: var(--primary);
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.thesis-title-section h4 {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.thesis-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.thesis-content {
+    padding: 2.5rem;
+}
+
+.thesis-intro {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 255, 159, 0.05);
+    border-left: 4px solid var(--primary);
+    border-radius: 4px;
+}
+
+.thesis-objectives {
+    margin-bottom: 3rem;
+}
+
+.thesis-objectives h5 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.objective-card {
+    background: var(--bg-darker);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.objective-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 159, 0.2);
+}
+
+.objective-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.objective-content h6 {
+    color: var(--primary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.objective-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.thesis-skills {
+    margin-bottom: 3rem;
+}
+
+.thesis-skills h5 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.thesis-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.thesis-tag {
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.thesis-tag.primary {
+    background: var(--primary);
+    color: var(--bg-dark);
+}
+
+.thesis-tag.secondary {
+    background: var(--secondary);
+    color: var(--bg-dark);
+}
+
+.thesis-tag.accent {
+    background: var(--accent);
+    color: var(--bg-dark);
+}
+
+.thesis-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px currentColor;
+}
+
+.thesis-impact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.impact-item {
+    background: rgba(0, 255, 159, 0.05);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--primary);
+    border-radius: 4px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.impact-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.impact-text {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.impact-text strong {
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ==================== */
 /* CONTACT SECTION      */
 /* ==================== */
 .contact-section {
@@ -1004,6 +1298,19 @@ body {
     .about-grid {
         grid-template-columns: 1fr;
     }
+    
+    .soft-skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .objectives-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .thesis-header {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1031,6 +1338,26 @@ body {
     .timeline-marker {
         left: -2.5rem;
     }
+    
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .thesis-header {
+        padding: 1.5rem;
+    }
+    
+    .thesis-content {
+        padding: 1.5rem;
+    }
+    
+    .thesis-title-section h3 {
+        font-size: 1.4rem;
+    }
+    
+    .thesis-title-section h4 {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1044,5 +1371,23 @@ body {
     
     .encrypted-subtitle {
         font-size: 1rem;
+    }
+    
+    .profile-image-small {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .objectives-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .thesis-tags {
+        gap: 0.5rem;
+    }
+    
+    .thesis-tag {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
 }
