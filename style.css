@@ -128,32 +128,46 @@ footer {
 }
 
 .mitre-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
 }
 
-.mitre-box {
-    padding: 20px;
-    border-radius: 12px;
-    background: rgba(0,240,255,0.1);
-    border: 1px solid #00f0ff;
-    cursor: pointer;
-    transition: 0.3s;
+.mitre-cell {
+  padding: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
 }
 
-.mitre-box:hover {
-    background: rgba(138,43,226,0.2);
-    box-shadow: 0 0 15px #8a2be2;
+.green {
+  background-color: #2e7d32;
 }
 
-.mitre-info {
-    margin-top: 30px;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 12px;
-    min-height: 80px;
+.yellow {
+  background-color: #c9a227;
+  color: black;
+}
+
+.red {
+  background-color: #8b2c2c;
+}
+
+.mitre-cell:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.mitre-detail {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  min-height: 100px;
 }
 
 .timeline {

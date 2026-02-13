@@ -19,15 +19,7 @@
     <a href="#contact" class="btn">Me contacter</a>
 </header>
 
-<section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email : oceane.pratheu@email.com</p>
-    <p>Téléphone : 06 66 81 88 43</p>
-    <p>Adresse : Guyancourt (78), France</p>
-    <a href="https://www.linkedin.com/in/oc%C3%A9ane-p-478b981b7/" target="_blank" class="linkedin">
-        Voir mon LinkedIn
-    </a>
-</section>
+
 
 <section class="timeline-section">
   <h2>Expériences Professionnelles</h2>
@@ -126,16 +118,28 @@
 </section>
 
 <section>
-  <h2>MITRE ATT&CK – Coverage Heatmap</h2>
-  <div class="mitre-heatmap">
-    <div class="mitre-cell high" onclick="showMitre('initial')">Initial Access</div>
-    <div class="mitre-cell medium" onclick="showMitre('execution')">Execution</div>
-    <div class="mitre-cell high" onclick="showMitre('credential')">Credential Access</div>
-    <div class="mitre-cell medium" onclick="showMitre('lateral')">Lateral Movement</div>
-    <div class="mitre-cell low" onclick="showMitre('exfiltration')">Exfiltration</div>
-    <div class="mitre-cell high" onclick="showMitre('c2')">Command & Control</div>
+  <h2>MITRE ATT&CK – Coverage Mapping</h2>
+
+  <div class="mitre-grid">
+
+    <div class="mitre-cell green" onclick="showMitre('recon')">Reconnaissance</div>
+    <div class="mitre-cell yellow" onclick="showMitre('resource')">Resource Development</div>
+    <div class="mitre-cell green" onclick="showMitre('initial')">Initial Access</div>
+    <div class="mitre-cell green" onclick="showMitre('execution')">Execution</div>
+    <div class="mitre-cell green" onclick="showMitre('persistence')">Persistence</div>
+    <div class="mitre-cell green" onclick="showMitre('privilege')">Privilege Escalation</div>
+    <div class="mitre-cell green" onclick="showMitre('defense')">Defense Evasion</div>
+    <div class="mitre-cell green" onclick="showMitre('credential')">Credential Access</div>
+    <div class="mitre-cell yellow" onclick="showMitre('discovery')">Discovery</div>
+    <div class="mitre-cell green" onclick="showMitre('lateral')">Lateral Movement</div>
+    <div class="mitre-cell yellow" onclick="showMitre('collection')">Collection</div>
+    <div class="mitre-cell green" onclick="showMitre('c2')">Command & Control</div>
+    <div class="mitre-cell yellow" onclick="showMitre('exfiltration')">Exfiltration</div>
+    <div class="mitre-cell yellow" onclick="showMitre('impact')">Impact</div>
+
   </div>
-  <div id="mitre-detail" class="mitre-info"></div>
+
+  <div id="mitre-detail" class="mitre-detail"></div>
 </section>
 
 <script>
@@ -143,12 +147,20 @@ function showMitre(type){
   const detail = document.getElementById("mitre-detail");
 
   const content = {
-    initial: "Détection phishing & exploitation vulnérabilités via SIEM.",
-    execution: "Use cases corrélés pour scripts malveillants.",
-    credential: "Détection dumping LSASS & Pass-the-Hash.",
-    lateral: "Surveillance mouvements latéraux OIV.",
-    exfiltration: "Analyse flux sortants anormaux.",
-    c2: "Détection beaconing & C2 via TI."
+    recon: "Analyse de surface d’attaque et veille sur vecteurs d’entrée potentiels.",
+    resource: "Surveillance de l’infrastructure malveillante via Threat Intelligence.",
+    initial: "Détection phishing & exploitation vulnérabilités dans contexte OIV.",
+    execution: "Développement use cases corrélés pour scripts et exécutions suspectes.",
+    persistence: "Surveillance mécanismes de maintien (services, tâches planifiées).",
+    privilege: "Détection élévations de privilèges anormales.",
+    defense: "Optimisation règles pour détecter contournement sécurité.",
+    credential: "Détection dumping LSASS & attaques Pass-the-Hash.",
+    discovery: "Surveillance scans internes et reconnaissance réseau.",
+    lateral: "Détection mouvements latéraux dans SI critiques.",
+    collection: "Surveillance extraction de données internes.",
+    c2: "Détection communications C2 via corrélation & TI.",
+    exfiltration: "Analyse flux sortants anormaux multi-sources.",
+    impact: "Surveillance comportements destructeurs ou ransomware."
   };
 
   detail.innerHTML = content[type];
@@ -238,6 +250,16 @@ function showInfo(type) {
     info.innerHTML = content[type];
 }
 </script>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email : oceane.pratheu@email.com</p>
+    <p>Téléphone : 06 66 81 88 43</p>
+    <p>Adresse : Guyancourt (78), France</p>
+    <a href="https://www.linkedin.com/in/oc%C3%A9ane-p-478b981b7/" target="_blank" class="linkedin">
+        Voir mon LinkedIn
+    </a>
+</section>
 
 </body>
 </html>
