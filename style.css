@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f111a;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(90deg, #1a1d2e, #2d1f3f);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d58cff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 60px;
+    color: #ff9de2;
+}
+
+.about {
+    padding: 40px;
+    text-align: center;
+}
+
+.kpi-grid, .mitre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card, .mitre-card {
+    background: #1a1d2e;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #d58cff;
+}
+
+.card:hover, .mitre-card:hover {
+    transform: scale(1.05);
+    background: #2d1f3f;
+}
+
+.experience {
+    padding: 20px 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #1a1d2e;
+}
