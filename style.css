@@ -155,3 +155,79 @@ footer {
     border-radius: 12px;
     min-height: 80px;
 }
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #00f0ff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-content {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #8a2be2;
+  backdrop-filter: blur(10px);
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company-logo {
+  width: 50px;
+}
+
+.date {
+  font-style: italic;
+  color: #00f0ff;
+}
+
+.mitre-heatmap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.mitre-cell {
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.high { background: #8a2be2; }
+.medium { background: #00f0ff; color: black; }
+.low { background: #444; }
+
+.mitre-cell:hover {
+  transform: scale(1.05);
+}
